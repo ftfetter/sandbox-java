@@ -58,10 +58,9 @@ public class RxJavaFileReader {
     }
 
     private static Flowable<FileInfo> convertToFileInfo(Flowable<String[]> flowable) {
-        return flowable.map(lineValues -> {
-            if (lineValues.length > 3) return new FileInfo(lineValues[0], lineValues[1], lineValues[2], lineValues[3], lineValues[4]);
-            return new FileInfo(lineValues[0], lineValues[1], lineValues[2], null, null);
-        });
+        return flowable.map(lineValues -> (lineValues.length > 3)
+                ? new FileInfo(lineValues[0], lineValues[1], lineValues[2], lineValues[3], lineValues[4])
+                : new FileInfo(lineValues[0], lineValues[1], lineValues[2], null, null));
     }
 
     private static Flowable<Client> mapToClient(Flowable<FileInfo> flowable) {
