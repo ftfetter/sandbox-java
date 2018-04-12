@@ -1,0 +1,13 @@
+0001|Cliente|Xablau
+2344|Item|Breja|2.30
+2344|Item|Breja|2.30
+2344|Item|Breja|2.30
+1095|Item|Leite Longa Vida|2.00
+1095|Item|Leite Longa Vida|2.00
+0002|Cliente|Xerebebe|
+1985|Item|Cenoura|5.00
+0003|Cliente|Frida|
+8934|Item|Nata|4.00
+7483|Item|Chimia|4.00
+9835|Item|Cuca|5.00
+7991|Item|Salame|7.00
