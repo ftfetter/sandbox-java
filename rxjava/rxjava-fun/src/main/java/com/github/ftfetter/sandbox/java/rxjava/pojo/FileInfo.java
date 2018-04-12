@@ -1,16 +1,18 @@
 package com.github.ftfetter.sandbox.java.rxjava.pojo;
 
-public class Something {
+public class FileInfo {
     private String id;
     private String type;
     private String name;
     private String value;
+    private String idOwner;
 
-    public Something(String id, String type, String name, String value) {
+    public FileInfo(String id, String type, String name, String value, String idOwner) {
         this.id = id;
         this.type = type;
         this.name = name;
         this.value = value;
+        this.idOwner = idOwner;
     }
 
     public String getId() {
@@ -45,6 +47,14 @@ public class Something {
         this.value = value;
     }
 
+    public String getIdOwner() {
+        return idOwner;
+    }
+
+    public void setIdOwner(String idOwner) {
+        this.idOwner = idOwner;
+    }
+
     @Override
     public String toString() {
         return "Something{" +
@@ -52,6 +62,7 @@ public class Something {
                 ", type='" + type + '\'' +
                 ", name='" + name + '\'' +
                 ", value='" + value + '\'' +
+                ", idOwner='" + idOwner + '\'' +
                 '}';
     }
 }

@@ -2,15 +2,15 @@ package com.github.ftfetter.sandbox.java.rxjava.pojo;
 
 import java.util.List;
 
-public class Cliente {
+public class Client {
     private Long id;
     private String name;
-    private List<Item> compras;
+    private List<Item> cart;
 
-    public Cliente(Long id, String name, List<Item> compras) {
+    public Client(Long id, String name, List<Item> cart) {
         this.id = id;
         this.name = name;
-        this.compras = compras;
+        this.cart = cart;
     }
 
     public Long getId() {
@@ -30,19 +30,19 @@ public class Cliente {
     }
 
     public List<Item> getCompras() {
-        return compras;
+        return cart;
     }
 
     public void setCompras(List<Item> compras) {
-        this.compras = compras;
+        this.cart = compras;
     }
 
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Client{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", compras=" + compras +
+                ", cart=" + cart +
                 '}';
     }
 }

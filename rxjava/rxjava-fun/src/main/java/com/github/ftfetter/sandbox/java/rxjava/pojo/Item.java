@@ -5,11 +5,13 @@ public class Item {
     private Long id;
     private String name;
     private Double value;
+    private Long idOwner;
 
-    public Item(Long id, String name, Double value) {
+    public Item(Long id, String name, Double value, Long idOwner) {
         this.id = id;
         this.name = name;
         this.value = value;
+        this.idOwner = idOwner;
     }
 
     public Long getId() {
@@ -36,12 +38,21 @@ public class Item {
         this.value = value;
     }
 
+    public Long getIdOwner() {
+        return idOwner;
+    }
+
+    public void setIdOwner(Long idOwner) {
+        this.idOwner = idOwner;
+    }
+
     @Override
     public String toString() {
         return "Item{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", value=" + value +
+                ", idOwner=" + idOwner +
                 '}';
     }
 }
